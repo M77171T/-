@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نظام إبداع سوفت للصرافة - لوحة التحكم</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { background-color: #f4f7f6; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .sidebar { background: #2c3e50; min-height: 100vh; color: white; transition: 0.3s; }
+        .nav-link { color: #bdc3c7; border-bottom: 1px solid #34495e; padding: 15px; }
+        .nav-link:hover { color: white; background: #34495e; }
+        .card-stat { border: none; border-radius: 15px; transition: 0.3s; color: white; }
+        .card-stat:hover { transform: translateY(-5px); }
+        .bg-money { background: linear-gradient(45deg, #2ecc71, #27ae60); }
+        .bg-transfers { background: linear-gradient(45deg, #3498db, #2980b9); }
+        .bg-accounts { background: linear-gradient(45deg, #f1c40f, #f39c12); }
+        .bg-security { background: linear-gradient(45deg, #e74c3c, #c0392b); }
+    </style>
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <nav class="col-md-3 col-lg-2 d-md-block sidebar collapse shadow">
+            <div class="position-sticky pt-3">
+                <h4 class="text-center mb-4"><i class="fas fa-university"></i> إبداع سوفت</h4>
+                <ul class="nav flex-column text-end">
+                    <li class="nav-item"><a class="nav-link active" href="#"><i class="fas fa-home ms-2"></i> الرئيسة</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-exchange-alt ms-2"></i> نظام الحوالات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-users ms-2"></i> دليل الحسابات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-vault ms-2"></i> الخزينة والبنوك</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-file-invoice-dollar ms-2"></i> التقارير المالية</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger" href="#"><i class="fas fa-sign-out-alt ms-2"></i> خروج</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                <h1 class="h2">نظام شركات الصرافة v2.5</h1>
+                <div class="btn-toolbar mb-2 mb-md-0">
+                    <span class="badge bg-dark p-2">المستخدم: مدير النظام</span>
+                    <span class="badge bg-primary p-2 ms-2">الفرع: المركز الرئيسي</span>
+                </div>
+            </div>
+
+            <div class="row g-3 mb-4 text-center">
+                <div class="col-md-3">
+                    <div class="card card-stat bg-money shadow p-3">
+                        <h5>إجمالي الصندوق</h5>
+                        <h3>5,400,200 <small>YER</small></h3>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card card-stat bg-transfers shadow p-3">
+                        <h5>حوالات صادرة اليوم</h5>
+                        <h3>142</h3>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card card-stat bg-accounts shadow p-3">
+                        <h5>طلبات السحب المعلقة</h5>
+                        <h3>12</h3>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card card-stat bg-security shadow p-3">
+                        <h5>تنبيهات الأمان</h5>
+                        <h3>0</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card shadow border-none rounded-4 p-3">
+                <h5 class="mb-3"><i class="fas fa-history text-muted"></i> آخر العمليات المالية</h5>
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle text-center">
+                        <thead class="table-light">
+                            <tr>
+                                <th>رقم القيد</th>
+                                <th>البيان</th>
+                                <th>المبلغ</th>
+                                <th>العملة</th>
+                                <th>الوقت</th>
+                                <th>الحالة</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#8821</td>
+                                <td>صرف حوالة - محمد أحمد</td>
+                                <td class="text-success fw-bold">150,000</td>
+                                <td>YER</td>
+                                <td>10:45 AM</td>
+                                <td><span class="badge bg-success">تم الاعتماد</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
