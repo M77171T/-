@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول - نظام شركات الصرافة</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <div class="login-header">
+                <div class="logo">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <h1>نظام شركات الصرافة</h1>
+                </div>
+                <p class="version">الإصدار 2.5.0</p>
+            </div>
+            
+            <form id="loginForm" class="login-form">
+                <div class="form-group">
+                    <label for="username"><i class="fas fa-user"></i> اسم المستخدم:</label>
+                    <input type="text" id="username" placeholder="أدخل اسم المستخدم" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password"><i class="fas fa-lock"></i> كلمة المرور:</label>
+                    <input type="password" id="password" placeholder="أدخل كلمة المرور" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="branch"><i class="fas fa-building"></i> الفرع:</label>
+                    <select id="branch">
+                        <option value="management">الإدارة الرئيسية</option>
+                        <option value="main-center">المركز الرئيسي</option>
+                        <option value="branch-1">فرع صنعاء</option>
+                        <option value="branch-2">فرع عدن</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="language"><i class="fas fa-language"></i> اللغة:</label>
+                    <select id="language">
+                        <option value="ar">العربية</option>
+                        <option value="en">English</option>
+                    </select>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="submit" class="btn-login-submit">
+                        <i class="fas fa-sign-in-alt"></i> تسجيل الدخول
+                    </button>
+                    <button type="button" class="btn-back" onclick="location.href='index.html'">
+                        <i class="fas fa-arrow-right"></i> العودة للرئيسية
+                    </button>
+                </div>
+                
+                <div class="login-help">
+                    <a href="#"><i class="fas fa-key"></i> نسيت كلمة المرور؟</a>
+                    <a href="#"><i class="fas fa-question-circle"></i> المساعدة</a>
+                </div>
+            </form>
+            
+            <div class="shortcuts-info">
+                <h3><i class="fas fa-keyboard"></i> اختصارات لوحة المفاتيح:</h3>
+                <div class="shortcuts">
+                    <div class="shortcut-item">
+                        <span class="key">F7</span>
+                        <span class="desc">سند صرف عميل</span>
+                    </div>
+                    <div class="shortcut-item">
+                        <span class="key">F6</span>
+                        <span class="desc">سند قبض عميل</span>
+                    </div>
+                    <div class="shortcut-item">
+                        <span class="key">F11</span>
+                        <span class="desc">توريد حوالة</span>
+                    </div>
+                    <div class="shortcut-item">
+                        <span class="key">F12</span>
+                        <span class="desc">استلام حوالة</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="login-footer">
+            <p>© 2024 إبداع سوفت للأنظمة المتخصصة</p>
+            <p>الدعم الفني: info@ebda3soft.net | www.ebda3soft.net</p>
+        </div>
+    </div>
+    
+    <script src="js/login.js"></script>
+</body>
+</html>
